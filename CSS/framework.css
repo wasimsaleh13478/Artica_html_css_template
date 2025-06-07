@@ -41,6 +41,9 @@
 .w-fit {
   width: fit-content;
 }
+.w-675 {
+  width: 675px;
+}
 .w-full {
   width: 100%;
 }
@@ -247,6 +250,21 @@
 .p-30 {
   padding: 30px;
 }
+.p-35 {
+  padding: 35px;
+}
+.p-40 {
+  padding: 40px;
+}
+.p-45 {
+  padding: 45px;
+}
+.p-50 {
+  padding: 50px;
+}
+.p-60 {
+  padding: 60px;
+}
 .pt-0 {
   padding-top: 0px;
 }
@@ -393,11 +411,11 @@
 .c-white {
   color: #fff;
 }
-.c-blue {
-  color: var(--blue-color);
+.c-title {
+  color: var(--title-color);
 }
-.c-alt-blue {
-  color: var(--blue-alt-color);
+.c-parag {
+  color: var(--paragraph-color);
 }
 .c-orange {
   color: var(--orange-color);
@@ -412,16 +430,22 @@
   color: var(--grey-color);
 }
 .c-main {
-  color: var(--main-color)
+  color: var(--main-color);
 }
 .c-alt {
-  color: var(--alt-color)
+  color: var(--alt-color);
+}
+.bg-title {
+  background-color: var(--title-color);
+}
+.bg-parag {
+  background-color: var(--paragraph-color);
 }
 .bg-main {
-  background-color: var(--main-color)
+  background-color: var(--main-color);
 }
 .bg-alt {
-  background-color: var(--alt-color)
+  background-color: var(--alt-color);
 }
 .bg-eee {
   background-color: #eee;
@@ -499,6 +523,9 @@
 .fs-25 {
   font-size: 25px;
 }
+.fs-28 {
+  font-size: 28px;
+}
 .fs-30 {
   font-size: 30px;
 }
@@ -553,22 +580,22 @@
 /* End Position */
 /* Start border */
 .border-1-white {
-  border: 1px solid #fff
+  border: 1px solid #fff;
 }
 .border-3-green {
-  border: 3px solid var(--green-color)
+  border: 3px solid var(--green-color);
 }
 .border-3-blue {
-  border: 3px solid var(--blue-color)
+  border: 3px solid var(--blue-color);
 }
 .border-3-red {
-  border: 3px solid var(--red-color)
+  border: 3px solid var(--red-color);
 }
 .border-3-orange {
-  border: 3px solid var(--orange-color)
+  border: 3px solid var(--orange-color);
 }
 .border-3-grey {
-  border: 3px solid var(--grey-color)
+  border: 3px solid var(--grey-color);
 }
 .border-ccc {
   border: 1px solid #ccc;
@@ -643,30 +670,36 @@
 /* Start Component */
 
 .logo {
-  font-family: molle
+  font-family: molle;
 }
 .between-flex {
   display: flex;
   justify-content: space-between;
 }
 .cur-po {
-  cursor: pointer
+  cursor: pointer;
 }
 @media (max-width: 767px) {
+  .fs-16-mobile {
+    font-size: 16px;
+  }
+  .fs-20-mobile {
+    font-size: 20px;
+  }
   .text-c-mobile {
     text-align: center;
   }
   .p-10-mobile {
-    padding: 10px
+    padding: 10px;
   }
   .pt-10-mobile {
-    padding-top: 10px
+    padding-top: 10px;
   }
   .pt-0-mobile {
-    padding-top: 0px
+    padding-top: 0px;
   }
   .pt-20-mobile {
-    padding-top: 20px
+    padding-top: 20px;
   }
   .mb-15-mobile {
     margin-bottom: 15px;
@@ -686,7 +719,7 @@
     flex-direction: column;
   }
   .flex-cl-r-mobile {
-    flex-direction:column-reverse;
+    flex-direction: column-reverse;
   }
   .gap-10-mobile {
     gap: 10px;
@@ -738,7 +771,7 @@
   color: #000;
   margin-bottom: 25px;
 }
-.section-title  p {
+.section-title p {
   font-size: 15px;
   color: var(--grey-color);
   margin-top: 10px;
@@ -787,18 +820,55 @@
   right: 4px;
 }
 /* End Toggle Switch */
+/* Start Section Paragraph */
+
+.section-paragraph {
+  position: relative;
+  max-width: 675px;
+  margin: 0 auto 20px;
+}
+.section-paragraph::before {
+  content: "";
+  position: absolute;
+  width: 550px;
+  height: 1px;
+  background-color: #f0f1f2;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.section-paragraph::after {
+  content: "";
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  border: 2px solid #f0f1f2;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -8px);
+  background-color: var(--main-color);
+  outline: 7px solid var(--main-color);
+}
+@media (max-width: 767px) {
+  .section-paragraph::before {
+    width:200px;
+  }
+}
+
+/* End Section Paragraph */
 /* Start Button Shape */
-    
-    .btn-shape {
-      display: block;
-      padding: 15px 40px;
-      width: fit-content;
-    }
-    
-    /* End Button Shape */
-    .flex-c {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+
+.btn-shape {
+  display: block;
+  padding: 15px 40px;
+  width: fit-content;
+}
+
+/* End Button Shape */
+.flex-c {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 /* End Component */

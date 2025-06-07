@@ -11,6 +11,8 @@
 :root {
   --main-color: #222c40;
   --alt-color: #546279;
+  --title-color: #3d506f;
+  --paragraph-color: #7f90a5;
 }
 ul {
   list-style: none;
@@ -37,6 +39,7 @@ body {
   font-family: lato, Arial, Helvetica, sans-serif;
 }
 .container {
+  position: relative;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -76,36 +79,6 @@ body {
 .intro .content {
   height: 355px;
 }
-.intro .content h1 {
-}
-.intro .content p {
-  position: relative;
-  max-width: 675px;
-  margin: 0 auto 20px;
-}
-.intro .content p::before {
-  content: "";
-  position: absolute;
-  width: 550px;
-  height: 1px;
-  background-color: #f0f1f2;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.intro .content p::after {
-  content: "";
-  position: absolute;
-  width: 13px;
-  height: 13px;
-  border-radius: 50%;
-  border: 2px solid #f0f1f2;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, -8px);
-  background-color: var(--main-color);
-  outline: 7px solid var(--main-color);
-}
 .intro .content .btn {
   display: block;
   padding: 15px 40px;
@@ -113,3 +86,24 @@ body {
   cursor: pointer;
 }
 /* End Intro */
+/* Start Servises */
+.portfolio .section-paragraph::before,
+.services .section-paragraph::before {
+  background-color: var(--paragraph-color);
+}
+.portfolio .section-paragraph::after,
+.services .section-paragraph::after {
+  background-color: #fff;
+  border-color: var(--paragraph-color);
+  outline-color: #fff;
+}
+.idea p {
+  max-width:800px;
+  font-size: 24px;
+}
+/* End Servises */
+/* Start Portfolio */
+
+
+
+/* End Portfolio */
