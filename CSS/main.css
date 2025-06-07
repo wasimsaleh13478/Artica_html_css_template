@@ -74,10 +74,15 @@ body {
 /* Start Intro */
 
 .intro {
-  height: 700px;
+  min-height: 700px;
+}
+@media (max-width: 767px) {
+  .intro {
+    min-height: 500px;
+  }
 }
 .intro .content {
-  height: 355px;
+  min-height: 355px;
 }
 .intro .content .btn {
   display: block;
@@ -98,12 +103,37 @@ body {
   outline-color: #fff;
 }
 .idea p {
-  max-width:800px;
+  max-width: 800px;
   font-size: 24px;
+}
+@media (max-width: 767px) {
+  .idea p {
+    font-size: 20px;
+  }
 }
 /* End Servises */
 /* Start Portfolio */
 
-
+.portfolio .buttuns > span {
+  transition: 0.3s;
+  cursor: pointer;
+}
+.portfolio .buttuns > span:hover {
+  background-color: #00c7fc;
+}
+@media (min-width: 768px) {
+  .portfolio .images {
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  }
+}
+.portfolio .images .image {
+  min-width: 270px;
+  min-height: 200px;
+}
+@media (min-width: 768px) {
+  .portfolio .images .image {
+    min-width: 270px;
+  }
+}
 
 /* End Portfolio */

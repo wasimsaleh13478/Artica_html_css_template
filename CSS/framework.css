@@ -38,6 +38,12 @@
 .gap-20 {
   gap: 20px;
 }
+.gap-25 {
+  gap: 25px;
+}
+.gap-30 {
+  gap: 30px;
+}
 .w-fit {
   width: fit-content;
 }
@@ -625,6 +631,10 @@
   .fs-16-mobile {
     font-size: 16px;
   }
+  .fs-18-mobile {
+  font-size: 18px;
+}
+
   .fs-20-mobile {
     font-size: 20px;
   }
@@ -633,6 +643,12 @@
   }
   .p-10-mobile {
     padding: 10px;
+  }
+  .p-20-mobile {
+    padding: 20px;
+  }
+  .p-30-mobile {
+    padding: 30px;
   }
   .pt-10-mobile {
     padding-top: 10px;
@@ -674,6 +690,9 @@
   }
   .p-10-mobile {
     padding: 10px;
+  }
+  .w-full-mobile {
+    width: 100%;
   }
 }
 @media (max-height: 450px) {
@@ -767,12 +786,12 @@
 .section-paragraph {
   position: relative;
   max-width: 675px;
-  margin: 0 auto 20px;
+  margin: 0 auto 40px;
 }
 .section-paragraph::before {
   content: "";
   position: absolute;
-  width: 550px;
+  width: 580px;
   height: 1px;
   background-color: #f0f1f2;
   top: 0;
@@ -801,10 +820,20 @@
 /* End Section Paragraph */
 /* Start Button Shape */
 
-.btn-shape {
+.shape-buttun {
   display: block;
   padding: 15px 40px;
   width: fit-content;
+}
+.btn-shape {
+  display: block;
+  padding: 4px 22px;
+  width: fit-content;
+}
+@media (max-width: 767px) {
+  .btn-shape {
+    width: 100%;
+  }
 }
 
 /* End Button Shape */
