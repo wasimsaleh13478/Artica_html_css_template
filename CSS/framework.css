@@ -56,6 +56,12 @@
 .text-c {
   text-align: center;
 }
+.text-l {
+  text-align:left ;
+}
+.text-r {
+  text-align:right ;
+}
 .z-1 {
   z-index: 1;
 }
@@ -286,6 +292,9 @@
 .pt-20 {
   padding-top: 20px;
 }
+.pt-25 {
+  padding-top: 25px;
+}
 .pt-30 {
   padding-top: 30px;
 }
@@ -354,6 +363,9 @@
 }
 .pb-20 {
   padding-bottom: 20px;
+}
+.pb-25 {
+  padding-bottom: 25px;
 }
 .pb-30 {
   padding-bottom: 30px;
@@ -429,6 +441,9 @@
 .c-alt {
   color: var(--alt-color);
 }
+.c-alt2 {
+  color: var(--alt2-color);
+}
 .bg-title {
   background-color: var(--title-color);
 }
@@ -440,6 +455,12 @@
 }
 .bg-alt {
   background-color: var(--alt-color);
+}
+.bg-alt-trans {
+  background-color: var(--alt-trans-c);
+}
+.bg-alt1 {
+  background-color: var(--alt1-color);
 }
 .bg-eee {
   background-color: #eee;
@@ -516,11 +537,23 @@
 .fs-70 {
   font-size: 70px;
 }
+.fs-80 {
+  font-size: 80px;
+}
+.fs-90 {
+  font-size: 90px;
+}
+.fs-100 {
+  font-size: 100px;
+}
 .fw-bold {
   font-weight: bold;
 }
 .fw-norm {
   font-weight: normal;
+}
+.fw-light {
+  font-weight: lighter;
 }
 
 /* End Font */
@@ -550,6 +583,9 @@
 }
 .border-b-ccc {
   border-bottom: 1px solid #ccc;
+}
+.border-b-white {
+  border-bottom: 1px solid #fff;
 }
 .border-ddd {
   border: 1px solid #ddd;
@@ -632,8 +668,8 @@
     font-size: 16px;
   }
   .fs-18-mobile {
-  font-size: 18px;
-}
+    font-size: 18px;
+  }
 
   .fs-20-mobile {
     font-size: 20px;
@@ -813,7 +849,7 @@
 }
 @media (max-width: 767px) {
   .section-paragraph::before {
-    width:200px;
+    width: 200px;
   }
 }
 
@@ -822,18 +858,14 @@
 
 .shape-buttun {
   display: block;
-  padding: 15px 40px;
+  padding: 10px 40px;
   width: fit-content;
+  cursor: pointer;
 }
 .btn-shape {
   display: block;
   padding: 4px 22px;
   width: fit-content;
-}
-@media (max-width: 767px) {
-  .btn-shape {
-    width: 100%;
-  }
 }
 
 /* End Button Shape */
