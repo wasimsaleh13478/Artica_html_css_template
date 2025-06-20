@@ -57,7 +57,7 @@ body {
     width: 750px;
   }
 }
-/* Mediume */
+/* Medium */
 @media (min-width: 992px) {
   .container {
     width: 970px;
@@ -103,7 +103,7 @@ body {
   cursor: pointer;
 }
 /* End Intro */
-/* Start Servises */
+/* Start Services */
 .blog .section-paragraph::before,
 .portfolio .section-paragraph::before,
 .services .section-paragraph::before {
@@ -125,7 +125,7 @@ body {
     font-size: 20px;
   }
 }
-/* End Servises */
+/* End Services */
 /* Start Portfolio */
 
 .buttuns > span {
@@ -148,9 +148,6 @@ body {
   .portfolio .images .image {
     min-width: 270px;
   }
-}
-.portfolio .image-info {
-  
 }
 @media (min-width: 768px) {
   .portfolio .image-info .content {
